@@ -1,6 +1,7 @@
 @headerHeight: 430px;
 .header{
   position: absolute;
+  z-index:1;
   top: 0;
   left: 0;
   width: 100%;
@@ -9,6 +10,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     background: rgba(0, 0, 0, 0);
   }
   .left-header{
@@ -25,7 +27,10 @@
   }
 }
 @media screen and (max-width:991px){
-  .left-header{
-    width:100%!important;
+  .header {
+    position: fixed;
+    .left-header {
+      width: 100% !important;
+    }
   }
 }

@@ -13,17 +13,36 @@
   width: 100%;
   .left-block, .right-block{
     height: 100%;
-    div{
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
+    .title{
+      text-transform: uppercase;
+      letter-spacing: @titleLetterSpacing;
+      font-size: @subtitleFontSize;
+      h1 {
+        font-size: @titleFontSize;
+      }
     }
   }
   .left-block{
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
+    div{
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title{
+      display:none;
+      text-align: center;
+    }
+    .right-block-item{
+      max-width: 66%;
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
     .my-photo{
       position:absolute;
       z-index: 2;
@@ -43,12 +62,6 @@
     padding-left: @rightBlockPaddingLeft;
     .title{
       margin-top: (2.5*@imgSize)/8;
-      text-transform: uppercase;
-      letter-spacing: @titleLetterSpacing;
-      font-size: @subtitleFontSize;
-      h1 {
-        font-size: @titleFontSize;
-      }
     }
   }
 }
@@ -59,6 +72,26 @@
     margin-right:0;
     .left-block, .right-block{
       padding-top: @leftBlockPaddingTop + 50px;
+      div{
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40%;
+      }
+    }
+    .left-block{
+      .my-photo{
+        z-index: 0;
+      }
+      .title{
+        display: block;
+      }
+    }
+    .right-block{
+      .title{
+        display: none;
+      }
     }
   }
 }
