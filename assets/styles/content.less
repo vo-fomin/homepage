@@ -42,7 +42,6 @@
         color: inherit;
       }
     }
-    //padding-bottom: 75px;
   }
   .left-block{
     background: @leftBlockColor;
@@ -162,5 +161,53 @@
         display: none;
       }
     }
+  }
+}
+
+@media screen and (max-width:754px){
+  .left-block {
+    padding-right: 0;
+    padding-left: 0;
+    .left-block-item {
+      .block-item-title {
+        padding-bottom: 10px !important;
+        h2{
+          font-size: 16pt;
+        }
+      }
+      .block-item-content {
+        font-size: 10pt;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:511px){
+  .left-block {
+    padding-right: 0;
+    padding-left: 0;
+    .title{
+      h1{
+        font-size: @titleFontSize - 4pt!important;
+      }
+      p{
+        font-size: 12pt;
+      }
+    }
+    .left-block-item {
+      .block-item-title {
+        padding-bottom: 5px !important;
+        h2{
+          font-size: 14pt;
+        }
+      }
+      .block-item-content {
+        font-size: 8pt;
+      }
+    }
+  }
+  .right-block{
+    padding-right: @rightBlockPaddingLeft!important;
+    padding-left: @rightBlockPaddingLeft!important;
   }
 }
