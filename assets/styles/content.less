@@ -100,10 +100,10 @@
     margin-left:0;
     margin-right:0;
     .left-block, .right-block{
-      padding-top: @leftBlockPaddingTop + 50px;
-      padding-bottom: @leftBlockPaddingTop + 100px;
     }
     .left-block{
+      padding-top: @leftBlockPaddingTop + 50px;
+      padding-bottom: @leftBlockPaddingTop + 100px;
       .my-photo{
         z-index: 0;
       }
@@ -118,7 +118,9 @@
       }
     }
     .right-block{
-      padding-top: 50px;
+      padding-top: @rightBlockPaddingLeft;
+      padding-right: @rightBlockPaddingLeft*2;
+      padding-left: @rightBlockPaddingLeft*2;
       .title{
         display: none;
       }
