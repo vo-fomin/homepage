@@ -1,0 +1,31 @@
+.content{
+  height: 1500px;
+  width: 100%;
+  .left-block, .right-block{
+    height: 100%;
+    padding-top: @headerHeight - 200px;
+    div{
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .left-block{
+    background: @leftBlockColor;
+    color: @leftHeaderColor;
+    .my-photo{
+      position:absolute;
+      z-index: 2;
+      background: url("../images/me_bs.jpg");
+      background-size: 100% 100%;
+      border-radius: 200px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .right-block{
+    background: @rightBlockColor;
+    color: @rightHeaderColor;
+  }
+}
