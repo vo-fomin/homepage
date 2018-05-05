@@ -1,4 +1,4 @@
-@headerHeight: 400px;
+@headerHeight: 430px;
 .header{
   position: absolute;
   top: 0;
@@ -15,15 +15,13 @@
     z-index: 1;
     width: 35%;
     border-top: @headerHeight solid @leftHeaderColor;
-    border-right: solid rgba(0, 0, 0, 0);
-    border-right-width: 1px;
+    border-right: 1px solid rgba(0, 0, 0, 0);
   }
   .right-header{
     z-index: 2;
     width: 100%;
     border-top: @headerHeight solid @rightHeaderColor;
-    border-left: solid rgba(0, 0, 0, 0);
-    border-left-width: 1px;
+    border-left: 1px solid rgba(0, 0, 0, 0);
   }
 }
 @media screen and (max-width:991px){

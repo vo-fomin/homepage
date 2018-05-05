@@ -1,9 +1,18 @@
+@contentHeight: 1500px;
+@rightBlockPaddingTop: @headerHeight - 200px;
+@leftBlockPaddingTop: @headerHeight;
+@imgSize: 200px;
+@imgBorderRadius: 200px;
+@titleLetterSpacing: 4pt;
+@titleFontSize: 36pt;
+@rightBlockPaddingLeft: 55px;
+@subtitleFontSize: 14pt;
+
 .content{
-  height: 1500px;
+  height: @contentHeight;
   width: 100%;
   .left-block, .right-block{
     height: 100%;
-    padding-top: @headerHeight - 200px;
     div{
       left: 0;
       right: 0;
@@ -14,19 +23,33 @@
   .left-block{
     background: @leftBlockColor;
     color: @leftHeaderColor;
+    padding-top: @leftBlockPaddingTop;
     .my-photo{
       position:absolute;
       z-index: 2;
       background: url("../images/me_bs.jpg");
       background-size: 100% 100%;
-      border-radius: 200px;
-      width: 200px;
-      height: 200px;
+      border-radius: @imgBorderRadius;
+      width: @imgSize;
+      height: @imgSize;
+      margin-top: -@imgSize;
+
     }
   }
   .right-block{
     background: @rightBlockColor;
     color: @rightHeaderColor;
+    padding-top: @rightBlockPaddingTop;
+    padding-left: @rightBlockPaddingLeft;
+    .title{
+      margin-top: (2.5*@imgSize)/8;
+      text-transform: uppercase;
+      letter-spacing: @titleLetterSpacing;
+      font-size: @subtitleFontSize;
+      h1 {
+        font-size: @titleFontSize;
+      }
+    }
   }
 }
 
@@ -35,7 +58,7 @@
     margin-left:0;
     margin-right:0;
     .left-block, .right-block{
-      padding-top: @headerHeight - 150px;
+      padding-top: @leftBlockPaddingTop + 50px;
     }
   }
 }
