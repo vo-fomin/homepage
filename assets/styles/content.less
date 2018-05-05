@@ -7,6 +7,8 @@
 @titleFontSize: 36pt;
 @rightBlockPaddingLeft: 55px;
 @subtitleFontSize: 14pt;
+@rightBlockItemPadding: 35px;
+@rightBlockItemWidth: 95%;
 
 .content{
   //height: max-content;
@@ -21,6 +23,12 @@
         font-size: @titleFontSize;
       }
     }
+    .block-item-content, .block-item-title, .my-photo{
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .block-item-content{
       color: @leftHeaderColor;
       a{
@@ -28,18 +36,12 @@
         color: inherit;
       }
     }
-    padding-bottom: 75px;
+    //padding-bottom: 75px;
   }
   .left-block{
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
-    .block-item-content, .block-item-title, .my-photo{
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
     .block-item-content, .block-item-title{
       max-width: 75%;
     }
@@ -66,8 +68,25 @@
     color: @rightHeaderColor;
     padding-top: @rightBlockPaddingTop;
     padding-left: @rightBlockPaddingLeft;
+    padding-right: @rightBlockPaddingLeft*2;
     .title{
       margin-top: (2.5*@imgSize)/8;
+      p{
+        margin-left: 5px;
+      }
+    }
+    .right-block-item{
+      border-bottom: 5px solid @leftBlockColor;
+      .block-item-content, .block-item-title{
+        padding-bottom:@rightBlockItemPadding;
+        max-width: @rightBlockItemWidth;
+      }
+      .block-item-title{
+        padding-top:@rightBlockItemPadding;
+      }
+    }
+    .right-block-item:last-child{
+      border-bottom: none;
     }
   }
 }
