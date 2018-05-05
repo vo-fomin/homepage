@@ -7,11 +7,11 @@
 @titleFontSize: 36pt;
 @rightBlockPaddingLeft: 55px;
 @subtitleFontSize: 14pt;
-@rightBlockItemPadding: 35px;
+@blockItemPadding: 35px;
 @rightBlockItemWidth: 95%;
 
 .content{
-  //height: max-content;
+  height: 100%;
   width: 100%;
   .left-block, .right-block{
     height: 100%;
@@ -29,6 +29,12 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .block-item-content, .block-item-title{
+      padding-bottom: @blockItemPadding;
+    }
+    .block-item-title{
+      padding-top: @blockItemPadding;
+    }
     .block-item-content{
       color: @leftHeaderColor;
       a{
@@ -42,6 +48,7 @@
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
+    padding-bottom: @leftBlockPaddingTop;
     .block-item-content, .block-item-title{
       max-width: 75%;
     }
@@ -78,12 +85,9 @@
     .right-block-item{
       border-bottom: 5px solid @leftBlockColor;
       .block-item-content, .block-item-title{
-        padding-bottom:@rightBlockItemPadding;
         max-width: @rightBlockItemWidth;
       }
-      .block-item-title{
-        padding-top:@rightBlockItemPadding;
-      }
+
     }
     .right-block-item:last-child{
       border-bottom: none;
@@ -97,6 +101,7 @@
     margin-right:0;
     .left-block, .right-block{
       padding-top: @leftBlockPaddingTop + 50px;
+      padding-bottom: @leftBlockPaddingTop + 100px;
     }
     .left-block{
       .my-photo{
@@ -113,7 +118,7 @@
       }
     }
     .right-block{
-      padding-top: 0;
+      padding-top: 50px;
       .title{
         display: none;
       }
