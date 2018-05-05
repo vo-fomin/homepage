@@ -21,27 +21,30 @@
         font-size: @titleFontSize;
       }
     }
+    .block-item-content{
+      color: @leftHeaderColor;
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
   }
   .left-block{
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
-    div{
+    .block-item-content, .block-item-title, .my-photo{
       left: 0;
       right: 0;
       margin-left: auto;
       margin-right: auto;
     }
+    .block-item-content, .block-item-title{
+      max-width: 75%;
+    }
     .title{
       display:none;
       text-align: center;
-    }
-    .right-block-item{
-      max-width: 66%;
-      a{
-        text-decoration: none;
-        color: inherit;
-      }
     }
     .my-photo{
       position:absolute;
@@ -52,7 +55,6 @@
       width: @imgSize;
       height: @imgSize;
       margin-top: -@imgSize;
-
     }
   }
   .right-block{
@@ -72,13 +74,6 @@
     margin-right:0;
     .left-block, .right-block{
       padding-top: @leftBlockPaddingTop + 50px;
-      div{
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 40%;
-      }
     }
     .left-block{
       .my-photo{
@@ -87,8 +82,15 @@
       .title{
         display: block;
       }
+      .left-block-item{
+        text-align: center;
+        .block-item-content, .block-item-title{
+          max-width: 100%;
+        }
+      }
     }
     .right-block{
+      padding-top: 0;
       .title{
         display: none;
       }
