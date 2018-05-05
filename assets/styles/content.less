@@ -29,3 +29,13 @@
     color: @rightHeaderColor;
   }
 }
+
+@media screen and (max-width:991px){
+  .content{
+    margin-left:0;
+    margin-right:0;
+    .left-block, .right-block{
+      padding-top: @headerHeight - 150px;
+    }
+  }
+}
