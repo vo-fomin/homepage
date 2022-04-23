@@ -6,7 +6,7 @@
   width: 100%;
   height: 430px;
 }
-.alt-photo {
+.print-photo {
   display: none;
 }
 .header div {
@@ -240,7 +240,7 @@
   div {
     -webkit-print-color-adjust: exact;
   }
-  .alt-photo {
+  .print-photo {
     display: block;
   }
 }
