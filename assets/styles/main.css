@@ -233,4 +233,9 @@
     padding-left: 55px !important;
   }
 }
+@media print {
+  div {
+    print-color-adjust: exact;
+  }
+}
 /*# sourceMappingURL=main.css.map */
