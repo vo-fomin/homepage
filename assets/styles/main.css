@@ -242,6 +242,7 @@
   }
   .print-photo {
     display: block;
+    border-radius: 200px;
   }
 }
 /*# sourceMappingURL=main.css.map */
