@@ -251,7 +251,10 @@
     display: none;
   }
   .right-block {
-    margin-top: 0 !important;
+    padding-top: 0;
+  }
+  .left-block {
+    padding-bottom: 400px;
   }
 }
 /*# sourceMappingURL=main.css.map */
