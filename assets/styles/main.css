@@ -250,5 +250,8 @@
   .content .right-block .title {
     display: none;
   }
+  .right-block {
+    margin-top: 0 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
