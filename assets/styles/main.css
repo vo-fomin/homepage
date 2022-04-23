@@ -6,6 +6,9 @@
   width: 100%;
   height: 430px;
 }
+.alt-photo {
+  display: none;
+}
 .header div {
   position: absolute;
   top: 0;
@@ -236,6 +239,9 @@
 @media print {
   div {
     -webkit-print-color-adjust: exact;
+  }
+  .alt-photo {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
