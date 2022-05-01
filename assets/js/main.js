@@ -13,5 +13,4 @@ $( document ).ready(function() {
     $(window).resize(function(){
         resizeHeader();
     });
-    body.onbeforeprint = function(){resizeHeader();};
 });
