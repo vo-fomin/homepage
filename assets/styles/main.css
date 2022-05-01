@@ -242,7 +242,9 @@
   }
   .header .left-header {
     width: 100% !important;
-    margin-top: -80px;
+  }
+  .header {
+    transform: scale(0.8, 0.8);
   }
   .print-photo {
     display: block;
