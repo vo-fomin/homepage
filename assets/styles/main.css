@@ -16,6 +16,9 @@
   height: 100%;
   background: rgba(0, 0, 0, 0);
 }
+b {
+  font-size: 1.4em;
+}
 .header .left-header {
   z-index: 1;
   width: 35%;
