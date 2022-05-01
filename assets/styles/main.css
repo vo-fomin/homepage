@@ -242,11 +242,7 @@
   }
   .header .left-header {
     width: 100% !important;
-    border-right-width: 100%;
-  }
-  .header .right-header {
-    width: 100% !important;
-    border-right-width: 100%;
+    height: auto;
   }
   .print-photo {
     display: block;
