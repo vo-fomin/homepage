@@ -277,6 +277,12 @@ b {
     padding-bottom: 10px !important;
     padding-top: 10px !important;
   }
+  .block-item-content {
+    font-size: 1.3em;
+  }
+  .block-item-content b {
+    font-size: 1.5em;
+  }
   .right-block-item:nth-child(2) {
     display: none;
   }
