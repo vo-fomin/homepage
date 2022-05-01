@@ -263,5 +263,8 @@
   .left-block {
     padding-bottom: 400px !important;
   }
+  .content .right-block .right-block-item {
+    border-bottom: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
