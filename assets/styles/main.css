@@ -242,7 +242,9 @@
   }
   .header .left-header {
     width: 100% !important;
-    height: auto;
+  }
+  .header {
+    height: 200px;
   }
   .print-photo {
     display: block;
