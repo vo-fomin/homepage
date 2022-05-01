@@ -2,6 +2,7 @@ $( document ).ready(function() {
     const $content = $('.content');
     const $leftHeader = $('.left-header');
     const $rightHeader = $('.right-header');
+    const body = $('body');
     const resizeHeader = function(){
         const rightWidth = $content.width()|0;
         const leftWidth = (rightWidth>=992?rightWidth*0.35:rightWidth);
@@ -12,5 +13,5 @@ $( document ).ready(function() {
     $(window).resize(function(){
         resizeHeader();
     });
-    window.addEventListener("beforeprint", resizeHeader);
+    body.onbeforeprint = function(){resizeHeader();};
 });
