@@ -2,7 +2,7 @@ $( document ).ready(function() {
     const $content = $('.content');
     const $leftHeader = $('.left-header');
     const $rightHeader = $('.right-header');
-    var resizeHeader = function(){
+    const resizeHeader = function(){
         const rightWidth = $content.width()|0;
         const leftWidth = (rightWidth>=992?rightWidth*0.35:rightWidth);
         $leftHeader.css("border-right-width", leftWidth + "px");
@@ -12,7 +12,8 @@ $( document ).ready(function() {
     $(window).resize(function(){
         resizeHeader();
     });
+    $('body').on('beforeprint', function(){
+        $leftHeader.css("border-right-width", $content.width() + "px");
+        $rightHeader.css("border-left-width", $content.width() + "px");
+    });
 });
-function prepPrint() {
-  resizeHeader();
-}
