@@ -274,8 +274,8 @@ b {
     border-bottom: none;
   }
   .block-item-title, .block-item-content {
-    padding-bottom: 15px !important;
-    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
   }
   .right-block-item:nth-child(2) {
     display: none;
