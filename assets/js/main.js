@@ -13,3 +13,6 @@ $( document ).ready(function() {
         resizeHeader();
     });
 });
+function prepPrint() {
+  resizeHeader();
+}
