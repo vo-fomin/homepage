@@ -12,4 +12,5 @@ $( document ).ready(function() {
     $(window).resize(function(){
         resizeHeader();
     });
+    window.addEventListener("beforeprint", resizeHeader);
 });
