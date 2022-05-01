@@ -244,7 +244,11 @@
     width: 100% !important;
   }
   .header {
-    transform: scale(0.8, 0.8);
+    transform: scale(0.7, 1);
+    margin-left: -15%;
+  }
+  .content{
+    margin-left: 0;
   }
   .print-photo {
     display: block;
@@ -260,10 +264,15 @@
     padding-top: 0 !important;
   }
   .left-block {
-    padding-bottom: 400px !important;
+    padding-bottom: 50px !important;
+    text-align: center;
   }
   .content .right-block .right-block-item {
     border-bottom: none;
+  }
+  .block-item-title, .block-item-content {
+    padding-bottom: 15px !important;
+    padding-top: 15px !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
