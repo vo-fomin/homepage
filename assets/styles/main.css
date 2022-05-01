@@ -274,5 +274,8 @@
     padding-bottom: 15px !important;
     padding-top: 15px !important;
   }
+  .right-block-item:nth-child(2) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
