@@ -240,12 +240,9 @@
   div {
     -webkit-print-color-adjust: exact;
   }
-  .header .left-header {
+  /*.header .left-header {
     width: 100% !important;
-  }
-  .header {
-    height: 200px;
-  }
+  }*/
   .print-photo {
     display: block;
     border-radius: 200px;
