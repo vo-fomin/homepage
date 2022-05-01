@@ -12,8 +12,8 @@ $( document ).ready(function() {
     $(window).resize(function(){
         resizeHeader();
     });
-    $('body').on('beforeprint', function(){
+    window.onbeforeprint = function(){
         $leftHeader.css("border-right-width", $content.width() + "px");
         $rightHeader.css("border-left-width", $content.width() + "px");
-    });
+    };
 });
