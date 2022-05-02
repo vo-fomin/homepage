@@ -244,10 +244,12 @@
   .print-photo {
     display: block;
     border-radius: 200px;
+    margin-top: 50px;
   }
   .content .left-block .title {
     display: block;
-    margin-bottom: 25px;
+    margin-top: 100px;
+    margin-bottom: 50px;
   }
   .content .right-block .title {
     display: none;
