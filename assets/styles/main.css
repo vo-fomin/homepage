@@ -145,7 +145,7 @@
   background: url('../images/email_icon.png');
   background-size: 100% 100%;
 }
-.left-block-item:nth-child(3) .block-item-content div:nth-child(5) .contact-icon {
+.left-block-item:nth-child(3) .block-item-content div:nth-child(3) .contact-icon {
   background: url('../images/linkedin_icon.png');
   background-size: 100% 100%;
 }
