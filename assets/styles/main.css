@@ -145,24 +145,12 @@
   background: url('../images/email_icon.png');
   background-size: 100% 100%;
 }
-.left-block-item:nth-child(3) .block-item-content div:nth-child(3) .contact-icon {
-  background: url('../images/fb_icon.png');
-  background-size: 100% 100%;
-}
-.left-block-item:nth-child(3) .block-item-content div:nth-child(4) .contact-icon {
-  background: url('../images/inst_icon.png');
-  background-size: 100% 100%;
-}
 .left-block-item:nth-child(3) .block-item-content div:nth-child(5) .contact-icon {
   background: url('../images/linkedin_icon.png');
   background-size: 100% 100%;
 }
 .left-block-item:nth-child(3) .block-item-content div:nth-child(6) .contact-icon {
   background: url('../images/github_icon.png');
-  background-size: 100% 100%;
-}
-.left-block-item:nth-child(3) .block-item-content div:nth-child(7) .contact-icon {
-  background: url('../images/steam_icon.png');
   background-size: 100% 100%;
 }
 @media screen and (max-width: 991px) {
