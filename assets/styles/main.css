@@ -149,9 +149,12 @@
   background: url('../images/linkedin_icon.png');
   background-size: 100% 100%;
 }
-.left-block-item:nth-child(3) .block-item-content div:nth-child(6) .contact-icon {
+/* .left-block-item:nth-child(3) .block-item-content div:nth-child(6) .contact-icon {
   background: url('../images/github_icon.png');
   background-size: 100% 100%;
+} */
+.block-item-content p, li {
+  font-size: 13pt;
 }
 @media screen and (max-width: 991px) {
   .content {
@@ -244,6 +247,7 @@
   }
   .content .left-block .title {
     display: block;
+    margin-bottom: 25px;
   }
   .content .right-block .title {
     display: none;
@@ -252,7 +256,7 @@
     padding-top: 0 !important;
   }
   .left-block {
-    padding-bottom: 50px !important;
+    padding-bottom: 275px !important;
     text-align: center;
   }
   .content .right-block .right-block-item {
@@ -264,6 +268,10 @@
   }
   .right-block-item:nth-child(2) {
     display: none;
+  }
+  .block-item-content p, li {
+    margin: 0;
+    font-size: 12pt;
   }
 }
 /*# sourceMappingURL=main.css.map */
