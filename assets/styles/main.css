@@ -259,6 +259,7 @@
   }
   .left-block {
     padding-bottom: 350px !important;
+    margin-top: 50px;
     text-align: center;
   }
   .content .right-block .right-block-item {
