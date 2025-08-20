@@ -131,12 +131,35 @@
   }
 }
 
+.portfolio-item{
+  border: 1px dashed @leftHeaderColor;
+  padding: 5px;
+  summary{
+    list-style: none;
+    cursor: pointer;
+  }
+  summary::before {
+    content: "▶";
+    margin-right: 5px;
+  }
+  a {
+    font-style: italic;
+  }
+} 
+
+.portfolio-item[open] {
+  summary {
+    margin-bottom: 10px;
+  }
+  summary::before {
+    content: "▼";
+  }
+} 
+
 @media screen and (max-width:991px){
   .content{
     margin-left:0;
     margin-right:0;
-    .left-block, .right-block{
-    }
     .left-block{
       padding-top: @leftBlockPaddingTop + 50px;
       padding-bottom: @leftBlockPaddingTop + 100px;
