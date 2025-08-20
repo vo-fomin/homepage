@@ -162,9 +162,26 @@
   background: url('../images/github_icon.png');
   background-size: 100% 100%;
 }
-.left-block-item:nth-child(3) .block-item-content div:nth-child(7) .contact-icon {
-  background: url('../images/steam_icon.png');
-  background-size: 100% 100%;
+.portfolio-item {
+  border: 1px dashed #3b4358;
+  padding: 5px;
+}
+.portfolio-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+.portfolio-item summary::before {
+  content: "▶";
+  margin-right: 5px;
+}
+.portfolio-item a {
+  font-style: italic;
+}
+.portfolio-item[open] summary {
+  margin-bottom: 10px;
+}
+.portfolio-item[open] summary::before {
+  content: "▼";
 }
 @media screen and (max-width: 991px) {
   .content {
