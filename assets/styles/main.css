@@ -6,6 +6,9 @@
   width: 100%;
   height: 430px;
 }
+.print-photo {
+  display: none;
+}
 .header div {
   position: absolute;
   top: 0;
@@ -82,7 +85,7 @@
   background: #dfdfdf;
   color: #3b4358;
   padding-top: 430px;
-  padding-bottom: 600px;
+  padding-bottom: 1400px;
 }
 .content .left-block .block-item-content,
 .content .left-block .block-item-title {
@@ -143,24 +146,15 @@
   background-size: 100% 100%;
 }
 .left-block-item:nth-child(3) .block-item-content div:nth-child(3) .contact-icon {
-  background: url('../images/fb_icon.png');
-  background-size: 100% 100%;
-}
-.left-block-item:nth-child(3) .block-item-content div:nth-child(4) .contact-icon {
-  background: url('../images/inst_icon.png');
-  background-size: 100% 100%;
-}
-.left-block-item:nth-child(3) .block-item-content div:nth-child(5) .contact-icon {
   background: url('../images/linkedin_icon.png');
   background-size: 100% 100%;
 }
-.left-block-item:nth-child(3) .block-item-content div:nth-child(6) .contact-icon {
+/* .left-block-item:nth-child(3) .block-item-content div:nth-child(6) .contact-icon {
   background: url('../images/github_icon.png');
   background-size: 100% 100%;
-}
-.left-block-item:nth-child(3) .block-item-content div:nth-child(7) .contact-icon {
-  background: url('../images/steam_icon.png');
-  background-size: 100% 100%;
+} */
+.block-item-content p, li, a {
+  font-size: 13pt;
 }
 @media screen and (max-width: 991px) {
   .content {
@@ -231,6 +225,56 @@
   .right-block {
     padding-right: 55px !important;
     padding-left: 55px !important;
+  }
+}
+@media print {
+  div {
+    -webkit-print-color-adjust: exact;
+  }
+  .header .left-header {
+    width: 100% !important;
+  }
+  .header {
+    transform: scale(0.7, 1);
+    margin-left: -15%;
+  }
+  .content{
+    margin-left: 0;
+  }
+  .print-photo {
+    display: block;
+    border-radius: 200px;
+    margin-top: 50px;
+  }
+  .content .left-block .title {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .content .right-block .title {
+    display: none;
+  }
+  .right-block {
+    padding-top: 0 !important;
+  }
+  .left-block {
+    padding-bottom: 350px !important;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .content .right-block .right-block-item {
+    border-bottom: none;
+  }
+  .block-item-title, .block-item-content {
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+  }
+  .right-block-item:nth-child(2) {
+    display: none;
+  }
+  .block-item-content p, li, a {
+    margin: 0;
+    font-size: 15pt;
   }
 }
 /*# sourceMappingURL=main.css.map */
