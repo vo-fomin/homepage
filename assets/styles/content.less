@@ -7,7 +7,7 @@
 @titleFontSize: 36pt;
 @rightBlockPaddingLeft: 55px;
 @subtitleFontSize: 14pt;
-@blockItemPadding: 35px;
+@blockItemPadding: 15px;
 @rightBlockItemWidth: 95%;
 
 .content{
@@ -40,6 +40,7 @@
       a{
         text-decoration: none;
         color: inherit;
+        font-size: 10.5pt;
       }
     }
   }
@@ -47,7 +48,7 @@
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
-    padding-bottom: @leftBlockPaddingTop + 170px;
+    padding-bottom: @leftBlockPaddingTop - 300px;
     .block-item-content, .block-item-title{
       max-width: 75%;
     }
@@ -64,10 +65,13 @@
       z-index: 2;
       background: url("../images/me_bs.jpg");
       background-size: 100% 100%;
-      border-radius: @imgBorderRadius;
       width: @imgSize;
       height: @imgSize;
       margin-top: -@imgSize;
+      border-radius: @imgBorderRadius;
+      .print-photo{
+        border-radius: @imgBorderRadius;
+      }
     }
   }
   .right-block{
