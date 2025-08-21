@@ -48,7 +48,7 @@
     background: @leftBlockColor;
     color: @leftHeaderColor;
     padding-top: @leftBlockPaddingTop;
-    padding-bottom: @leftBlockPaddingTop - 300px;
+    padding-bottom: @leftBlockPaddingTop - 250px;
     .block-item-content, .block-item-title{
       max-width: 75%;
     }
@@ -156,6 +156,10 @@
   }
 } 
 
+#hobbies_right {
+  display: none;
+}
+
 @media screen and (max-width:991px){
   .content{
     margin-left:0;
@@ -185,6 +189,12 @@
         display: none;
       }
     }
+  }
+  #hobbies_right {
+    display: block;
+  }
+  #hobbies_left {
+    display: none;
   }
 }
 
