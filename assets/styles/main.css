@@ -83,7 +83,7 @@
   background: #dfdfdf;
   color: #3b4358;
   padding-top: 430px;
-  padding-bottom: 130px;
+  padding-bottom: 180px;
 }
 .content .left-block .block-item-content,
 .content .left-block .block-item-title {
@@ -183,6 +183,9 @@
 .portfolio-item[open] summary::before {
   content: "▼";
 }
+#hobbies_right {
+  display: none;
+}
 @media screen and (max-width: 991px) {
   .content {
     margin-left: 0;
@@ -212,6 +215,12 @@
     padding-left: 110px;
   }
   .content .right-block .title {
+    display: none;
+  }
+  #hobbies_right {
+    display: block;
+  }
+  #hobbies_left {
     display: none;
   }
 }
