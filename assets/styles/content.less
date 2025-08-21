@@ -93,7 +93,7 @@
       }
 
     }
-    .right-block-item:last-child{
+    .right-block-item:last-child, .right-block-item:nth-last-child(2){
       border-bottom: none;
     }
   }
@@ -187,6 +187,9 @@
       padding-left: @rightBlockPaddingLeft*2;
       .title{
         display: none;
+      }
+      .right-block-item:nth-last-child(2){
+        border-bottom: 5px solid @leftBlockColor;
       }
     }
   }
