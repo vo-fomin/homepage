@@ -160,16 +160,16 @@
   display: none;
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:991px), print{
   .content{
     margin-left:0;
     margin-right:0;
     .left-block{
       padding-top: @leftBlockPaddingTop + 50px;
       padding-bottom: @leftBlockPaddingTop + 100px;
-      margin-right: -15px !important;
-      .my-photo{
-        z-index: 0;
+      //margin-right: -15px !important;
+      .my-photo, .print-photo {
+        z-index: 10;
       }
       .title{
         display: block;
@@ -246,5 +246,11 @@
   .right-block{
     padding-right: @rightBlockPaddingLeft!important;
     padding-left: @rightBlockPaddingLeft!important;
+  }
+}
+
+@media print {
+  .left-block{
+    padding-bottom: 200px !important;
   }
 }
